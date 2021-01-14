@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+
+		body{
+			background-image:url(seaa.jpg);
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		.content{
+			background: white;
+			width: 50%;
+			padding: 40px;
+			margin: 100px auto;
+			font-family: calibri;
+			border-radius: 10px;
+		}
+
+		p{
+			font-size: 25px;
+			color: black;
+		}
+
+
+
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="mainpage.html">Menu</a>
+		<a href="about.html">Wat is Bora Bora</a>
+		<a href="Bookatrip.html">Boek een reis</a>
+		<a href="inlog.html">Login</a>
+</div>
+
+<div id="main">
+
+<div style="background-color: #00000000; height:50px; padding-top:5px;">
+
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<div class="content">
+<center>
+<h1 style="font-size:500%;">
+Over Bora Bora
+
+</h1>
+<iframe width="900" height="506" src="https://www.youtube.com/embed/O_9TgmIg1nA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p> Bora Bora is een eiland gelegen in de Stille Oceaan tussen Australië en Zuid-Amerika. Het eiland behoort samen met onder andere Tahiti en Moorea tot Frans-Polynesië en ligt zo'n 260 kilometer ten noordwesten van de hoofdstad Papeete. Het eiland bestaat uit een uitgedoofde vulkaan, de 727 meter hoge Mount Otemanu, en een door een rif omgeven lagune. In het jaar 2007 telde het eiland 8800 inwoners. De grootste plaats is Vaitape. De oorspronkelijke naam luidde Pora Pora, dat in het Tahitiaans "eerstgeborene" betekent.</p>
+		 <div class="mapouter"><div class="gmap_canvas"><iframe width="900" height="597" id="gmap_canvas" src="https://maps.google.com/maps?q=bora%20bora&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+		 </div>
+	 </center>
+</body>
+</html>

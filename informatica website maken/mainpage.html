@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> If u read this ur fat </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type= "text/css">
+
+body{
+  background-image:url(mainbackground1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.content{
+  background: white;
+  width: 50%;
+  padding: 40px;
+  margin: 100px auto;
+  font-family: calibri;
+  border-radius: 10px;
+}
+
+p{
+  font-size: 75px;
+  color: black;
+}
+
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="mainpage.html">Menu</a>
+    <a href="about.html">Wat is Bora Bora</a>
+    <a href="Bookatrip.html">Boek een reis</a>
+	  <a href="inlog.html">Login</a>
+</div>
+
+<div id="main">
+
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+</p>
+</h1>
+</div>
+<div class="content">
+
+  <center>
+
+<h1 style="font-size:500%;">
+  <p style="color:#222222";>
+Bora Bora
+
+</p>
+</h1>
+<table style="width:100%">
+
+  <tr>
+    <img src="image1.jpg"width="450" height="300">
+    <img src="image2.jpg"width="450" height="300">
+    <img src="image3.jpg"width="450" height="300">
+    <img src="image4.jpg"width="450" height="300">
+  </tr>
+
+</table>
+
+
+</center>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+</body>
+</html>
